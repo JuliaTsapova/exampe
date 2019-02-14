@@ -1,0 +1,466 @@
+html { 
+-webkit-box-sizing: border-box; 
+box-sizing: border-box 
+} 
+
+*, 
+::after, 
+::before { 
+box-sizing: inherit 
+} 
+
+body{ 
+background-color:grey; 
+} 
+
+nav{ 
+display: flex; 
+outline: 3px solid black; 
+align-items: center; 
+} 
+
+@keyframes updown {
+	0%, 100%{
+		margin-top: 21px;
+		color: black;
+	}
+
+	50%{
+		margin-top: 240px;
+		color: black;
+	}
+
+	25%, 75%{
+		margin-top: 110px;
+		color: red;
+	}
+}
+
+@keyframes select {
+	0%, 100%{
+		color: black;
+		background-color: white;
+	}
+
+	50%{
+		color: white;
+		background-color: black;
+	}
+}
+
+nav a { 
+text-decoration: none; 
+text-decoration: bold; 
+background-color: darkgreen; 
+display: block; 
+border-radius: 10px 15px; 
+padding: 20px 5px; 
+} 
+
+nav a:hover{ 
+color: red; 
+text-decoration: underline; 
+background-color: white; 
+} 
+
+nav a:active{ 
+background-color:lightblue; 
+} 
+
+header { 
+width: 1200px; 
+height: 200px; 
+margin: 0 auto; 
+background-color:#128f0f; 
+color: white; 
+} 
+
+.red {
+background-color:#ff0000;
+}
+
+nav h1 .red {
+background-color:darkred;
+}
+
+nav h1 .red:hover {
+background-color:white;
+color:black;
+}
+
+.blue {
+background-color:#1b527c;
+}
+
+nav h1 .blue {
+background-color:darkblue;
+}
+
+nav h1 .blue:hover {
+background-color:white;
+color:purple;
+}
+
+.yellow{
+background-color:#a1ae10;
+}
+
+nav h1 .yellow {
+background-color:#737c10;
+}
+
+nav h1 .yellow:hover {
+background-color:orange;
+color:lightyellow;
+}
+
+a{ 
+color: white; 
+} 
+
+header img { 
+width: 200px; 
+height: 200px; 
+} 
+
+h1{ 
+margin-right:10px; 
+margin-left: 10px; 
+} 
+
+main img{
+margin-left: 10px;
+}
+
+h2{
+margin-top: 0;
+margin-left: 10px;
+color: green;
+}
+
+h2:hover{
+color:red;
+text-decoration: 
+}
+
+nav img{
+margin-left:10px;
+}
+
+main{ 
+outline: 3px solid black; 
+width: 1200px; 
+height: 800px; 
+margin: 0 auto; 
+background-color:darkgrey; 
+flex-wrap: wrap;
+display: flex;
+justify-content: center;
+} 
+
+.container { 
+display: flex; 
+align-items: center;
+width: 1200px; 
+height: 200px; 
+outline: 3px solid black;
+background-color: yellow;
+} 
+
+.container2{
+width: 400px; 
+height: 200px;
+margin-left: 50px;
+background-color: yellow;
+}
+
+.login{ 
+width: 250px; 
+height: 150px; 
+outline: 3px solid black; 
+align-items: space-around;
+margin-left: 50px;
+background-color: white;
+}
+
+.name{
+width: 400px; 
+height: 50px;
+outline: 1px solid black; 
+margin-top: 30px;
+background-color: white;
+text-decoration: none; 
+text-decoration: bold; 
+}
+
+.how{
+width: 400px; 
+height: 50px;
+outline: 1px solid black; 	
+margin-top: 40px;
+background-color: white;
+text-decoration: none; 
+text-decoration: bold; 
+}
+
+main nav{
+width: 400px; 
+height: 400px;
+outline: 1px solid black;
+background-color:#3532b2;
+}
+
+.nav1{
+width: 350px; 
+height: 350px;
+outline: 2px solid black;
+margin: 25px;
+background-color: #286ca0;
+color: white;
+text-decoration: none;
+text-decoration: underline;
+
+}
+
+h4{
+margin-top: 0;
+}
+
+.nav2{
+width: 200px; 
+height: 200px;
+background-color: white;
+font-size: 20px;
+text-decoration:overline;
+}
+
+.div1{
+width: 500px; 
+height: 280px;
+outline: 2px solid black;
+background-color: aqua;
+margin-top: 20px;
+margin-left: 70px;
+}
+
+h3{
+margin-bottom: 50px;
+color: darkblue;
+text-shadow: 1px 1px 2px purple, 0 0 1em black;
+font-size: 20px; 
+
+}
+
+.div2{
+width: 200px; 
+height: 200px;
+outline: 2px solid black;
+margin-left: 10px;
+background-color: orange;
+}
+
+.div3{
+width: 200px; 
+height: 50px;
+background-color: grey;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+h4:hover{
+color: orange;
+}
+
+h5{
+font-size: 20px;
+color: black;
+}
+
+h6{
+font-size: 25px;
+text-decoration: bold;
+color:red;
+margin-top: 5px;
+}
+
+
+
+.div4{
+width: 1000px; 
+height: 597px;
+background-color: white;
+}
+
+.info{
+width: 400px; 
+height: 150px;
+margin: 10px;
+outline: 2px solid black;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+background-color: yellow;
+}
+
+.info h5{
+margin-left: 10px;
+}
+
+.div5{
+width: 1000px; 
+height: 600px;
+flex-wrap: wrap;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+
+.info h1{
+font-size: 40px;
+color:red;
+}
+
+.info h1:hover{
+font-size: 40px;
+color:darkred;
+}
+
+h6:hover{
+color: darkred;
+}
+
+.input{
+outline: 2px solid black;
+}
+
+.main1{
+display: block;
+color: darkgrey;
+display: flex;
+justify-content: flex-start;
+height: 400px;
+}
+
+.div6{
+margin-top: 50px;
+margin-bottom: 50px;
+width: 600px; 
+height: 400px;
+outline: 2px solid black;
+background-color: darkred;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 300px;
+}
+
+.div7{
+margin-top: 50px;
+margin-bottom: 50px;
+width: 300px; 
+height: 400px;
+outline: 2px solid black;
+background-color: darkred;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.div8{
+width: 300px; 
+height: 315px;
+outline: 2px solid black;
+background-color: grey;
+}
+
+.number{
+width: 150px;
+height: 50px;
+background-color: green;
+color: white;
+margin-left: 10px;
+margin-top: 10px;
+padding-left: 10px;
+}
+
+footer{
+margin: 4px;
+background-color: aqua;
+outline: 3px solid blue; 
+width: 1330px; 
+height: 100px; 
+font-size: 30px;
+color: white;
+}
+
+.yellow2{
+background-color: yellow;
+outline: 3px solid orange; 
+}
+
+.red1{
+background-color: red;
+outline: 3px solid darkred; 
+}
+
+.green1{
+background-color: green;
+outline: 3px solid darkgreen; 
+}
+
+.div9{
+margin-left: 20px;
+margin-top: 20px;
+width: 500px; 
+height: 270px; 
+outline: 3px solid green; 
+background-color: #339933;
+}
+
+.div10{
+margin-left: 20px;
+margin-top: 20px;
+width: 150px;
+height: 50px;
+background-color: darkgreen;
+color: white;
+}
+
+nav.div10 h1:hover{
+color: green;
+}
+
+.main2{
+height: 470px;
+}
+
+footer a{
+margin-top: 20px;
+margin-left: 20px;
+background-color: white;
+color: black;
+text-decoration-line: none;
+}
+
+.div11{
+width: 200px;
+height: 50px;
+background-color: #339933;
+margin-top: 20px;
+margin-left: 20px;
+outline: 0;
+}
+
+.updown {
+	animation: updown 2s infinite;
+}
+
+footer a:hover{
+animation: select 3s infinite;
+}
+
+footer{
+padding: 10px 10px 10px 10px;
+}
+
